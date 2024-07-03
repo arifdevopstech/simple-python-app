@@ -1,6 +1,6 @@
 # AWS CICD Project to Deploy a Simple Python App to EC2 Instance
 
-Clone this GitHub Repository
+## Clone this GitHub Repository
 
 Create an AWS CodeBuild
 Sign in to the AWS Management Console
