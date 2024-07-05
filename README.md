@@ -10,7 +10,7 @@
 
 2. Navigate to CodeBuild
 
-3. Create a New Build Project
+3. Go to Create Project
 
 4. Project Configuration
 
@@ -34,9 +34,19 @@
    
     Choose New service role. CodeBuild will automatically create a new role for you.
 
+    Expand Additional Configuration --> Privileged
+    
+    Check the box "Enable this flag if you want to build Docker images or want your builds to get elevated privileges"
+
 8. Buildspec Configuration
 
-    You can select either "Insert Build Commands" or "Use a buildspec.yml" file. You can create a buildspec.yml file which contains your build commands by defining inline commands in the console or You can upload a buildspec.yml file to your source repository
+    You can select either "Insert Build Commands" or "Use a buildspec.yml" file. You can create a buildspec.yml file which contains your build commands by defining inline commands in the console by clicking "Switch to Editor" or You can upload a buildspec.yml file to your source repository
+
+9. Once done "Create Build Project"
+
+10. Attach the policies AmazonSSMFullAccess & AWSCodeBuildAdminAccess to the role that created by CodeBuild service from IAM
+
+11. 
     
-### Step 3: AWS CodeDeploy
+### Step 3: AWS CodePipeline
 
